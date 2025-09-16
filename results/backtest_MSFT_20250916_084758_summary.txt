@@ -1,0 +1,24 @@
+RSI-ADX Momentum Strategy Backtest Results
+==================================================
+
+Strategy Performance:
+  Total Return: -4.72%
+  Annualized Return: -1.26%
+  Sharpe Ratio: -2.33
+  Maximum Drawdown: 5.51%
+  Calmar Ratio: -0.23
+
+Trade Statistics:
+  Total Trades: 34
+  Win Rate: 20.59%
+  Profit Factor: 0.54
+  Average P&L: $-59.41
+  Best Trade: $394.80
+  Worst Trade: $-200.16
+
+Risk Metrics:
+  Volatility: 1.40%
+  Sortino Ratio: -1.14
+  VaR (95%): -0.01%
+  Time in Market: 10.20%
+

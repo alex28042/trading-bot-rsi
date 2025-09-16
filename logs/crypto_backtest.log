@@ -1,0 +1,662 @@
+2025-09-16 09:01:31,325 - __main__ - INFO - Setting up cryptocurrency trading configuration...
+2025-09-16 09:01:31,325 - __main__ - INFO - Loading BTC/USDT market data from Binance...
+2025-09-16 09:01:31,325 - src.data_ingestion.data_loader - INFO - Loading data for BTCUSDT from 2023-01-01 to 2024-01-01
+2025-09-16 09:01:31,325 - __main__ - ERROR - Failed to load data from Binance: Binance connector not available. Install python-binance: pip install python-binance
+2025-09-16 09:02:48,305 - __main__ - INFO - Setting up cryptocurrency trading configuration...
+2025-09-16 09:02:48,305 - __main__ - INFO - Loading BTC/USDT market data from Binance...
+2025-09-16 09:02:48,305 - src.data_ingestion.data_loader - INFO - Loading data for BTCUSDT from 2023-01-01 to 2024-01-01
+2025-09-16 09:02:48,305 - src.data_ingestion.data_loader - INFO - Loading data from Binance for BTCUSDT
+2025-09-16 09:02:48,581 - src.binance_connector.binance_client - INFO - Binance public client initialized (data only)
+2025-09-16 09:02:48,870 - src.binance_connector.binance_client - INFO - Binance API connectivity test successful
+2025-09-16 09:02:48,870 - src.binance_connector.data_fetcher - INFO - BinanceDataFetcher initialized successfully
+2025-09-16 09:02:50,218 - src.binance_connector.data_fetcher - INFO - Fetched 1000 candles for BTCUSDT (4h)
+2025-09-16 09:02:50,220 - src.data_ingestion.data_loader - INFO - Data loaded successfully: 1000 rows from 2023-01-01 00:00:00 to 2023-06-16 12:00:00
+2025-09-16 09:02:50,221 - __main__ - INFO - Running cryptocurrency backtest...
+2025-09-16 09:02:50,221 - src.backtesting_engine.backtest - INFO - Starting backtest simulation...
+2025-09-16 09:02:50,221 - src.strategy_logic.strategy - INFO - All strategy parameters validated successfully
+2025-09-16 09:02:50,225 - src.strategy_logic.strategy - INFO - Technical indicators calculated successfully
+2025-09-16 09:02:50,329 - src.strategy_logic.strategy - INFO - Generated 86 trading signals
+2025-09-16 09:02:50,330 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $16556.66 on 2023-01-01
+2025-09-16 09:02:50,330 - src.risk_management.risk_manager - INFO - Stop loss: $16225.53, Take profit: $17218.93
+2025-09-16 09:02:50,334 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $16643.37 on 2023-01-03
+2025-09-16 09:02:50,334 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $8.67 (0.52%)
+2025-09-16 09:02:50,335 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $16675.18 on 2023-01-03
+2025-09-16 09:02:50,335 - src.risk_management.risk_manager - INFO - Stop loss: $16341.68, Take profit: $17342.19
+2025-09-16 09:02:50,339 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $16794.06 on 2023-01-06
+2025-09-16 09:02:50,339 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $11.89 (0.71%)
+2025-09-16 09:02:50,340 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $16840.82 on 2023-01-06
+2025-09-16 09:02:50,340 - src.risk_management.risk_manager - INFO - Stop loss: $16504.00, Take profit: $17514.45
+2025-09-16 09:02:50,348 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $17514.45 on 2023-01-11
+2025-09-16 09:02:50,348 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $67.36 (4.00%)
+2025-09-16 09:02:50,367 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $22748.86 on 2023-01-25
+2025-09-16 09:02:50,367 - src.risk_management.risk_manager - INFO - Stop loss: $22293.88, Take profit: $23658.81
+2025-09-16 09:02:50,368 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23658.81 on 2023-01-25
+2025-09-16 09:02:50,368 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $91.00 (4.00%)
+2025-09-16 09:02:50,370 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23072.77 on 2023-01-27
+2025-09-16 09:02:50,370 - src.risk_management.risk_manager - INFO - Stop loss: $22611.31, Take profit: $23995.68
+2025-09-16 09:02:50,372 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22991.51 on 2023-01-28
+2025-09-16 09:02:50,372 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-8.13 (-0.35%)
+2025-09-16 09:02:50,377 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23121.80 on 2023-01-31
+2025-09-16 09:02:50,377 - src.risk_management.risk_manager - INFO - Stop loss: $22659.36, Take profit: $24046.67
+2025-09-16 09:02:50,378 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23076.68 on 2023-02-01
+2025-09-16 09:02:50,378 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-4.51 (-0.20%)
+2025-09-16 09:02:50,379 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23385.99 on 2023-02-01
+2025-09-16 09:02:50,379 - src.risk_management.risk_manager - INFO - Stop loss: $22918.27, Take profit: $24321.43
+2025-09-16 09:02:50,381 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23488.94 on 2023-02-02
+2025-09-16 09:02:50,381 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $10.29 (0.44%)
+2025-09-16 09:02:50,381 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23534.18 on 2023-02-03
+2025-09-16 09:02:50,381 - src.risk_management.risk_manager - INFO - Stop loss: $23063.50, Take profit: $24475.55
+2025-09-16 09:02:50,382 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23456.23 on 2023-02-03
+2025-09-16 09:02:50,382 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-7.80 (-0.33%)
+2025-09-16 09:02:50,388 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23091.90 on 2023-02-07
+2025-09-16 09:02:50,388 - src.risk_management.risk_manager - INFO - Stop loss: $22630.06, Take profit: $24015.58
+2025-09-16 09:02:50,390 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22872.28 on 2023-02-08
+2025-09-16 09:02:50,390 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-21.96 (-0.95%)
+2025-09-16 09:02:50,396 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $21888.31 on 2023-02-12
+2025-09-16 09:02:50,396 - src.risk_management.risk_manager - INFO - Stop loss: $21450.54, Take profit: $22763.84
+2025-09-16 09:02:50,397 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $21783.54 on 2023-02-12
+2025-09-16 09:02:50,397 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-10.48 (-0.48%)
+2025-09-16 09:02:50,398 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $21773.97 on 2023-02-13
+2025-09-16 09:02:50,398 - src.risk_management.risk_manager - INFO - Stop loss: $21338.49, Take profit: $22644.93
+2025-09-16 09:02:50,399 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $21700.42 on 2023-02-14
+2025-09-16 09:02:50,399 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-7.36 (-0.34%)
+2025-09-16 09:02:50,399 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $21768.48 on 2023-02-14
+2025-09-16 09:02:50,399 - src.risk_management.risk_manager - INFO - Stop loss: $21333.11, Take profit: $22639.22
+2025-09-16 09:02:50,401 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22639.22 on 2023-02-15
+2025-09-16 09:02:50,401 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $87.07 (4.00%)
+2025-09-16 09:02:50,404 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23838.64 on 2023-02-17
+2025-09-16 09:02:50,404 - src.risk_management.risk_manager - INFO - Stop loss: $23361.87, Take profit: $24792.19
+2025-09-16 09:02:50,404 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23637.04 on 2023-02-17
+2025-09-16 09:02:50,404 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-20.16 (-0.85%)
+2025-09-16 09:02:50,405 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23789.82 on 2023-02-17
+2025-09-16 09:02:50,405 - src.risk_management.risk_manager - INFO - Stop loss: $23314.02, Take profit: $24741.41
+2025-09-16 09:02:50,406 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $24741.41 on 2023-02-17
+2025-09-16 09:02:50,406 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $95.16 (4.00%)
+2025-09-16 09:02:50,409 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $24503.65 on 2023-02-20
+2025-09-16 09:02:50,409 - src.risk_management.risk_manager - INFO - Stop loss: $24013.58, Take profit: $25483.80
+2025-09-16 09:02:50,411 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $24572.83 on 2023-02-21
+2025-09-16 09:02:50,412 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $6.92 (0.28%)
+2025-09-16 09:02:50,414 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $24454.85 on 2023-02-23
+2025-09-16 09:02:50,414 - src.risk_management.risk_manager - INFO - Stop loss: $23965.75, Take profit: $25433.04
+2025-09-16 09:02:50,415 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23965.75 on 2023-02-23
+2025-09-16 09:02:50,415 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-48.91 (-2.00%)
+2025-09-16 09:02:50,419 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23499.33 on 2023-02-26
+2025-09-16 09:02:50,419 - src.risk_management.risk_manager - INFO - Stop loss: $23029.34, Take profit: $24439.30
+2025-09-16 09:02:50,421 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23276.35 on 2023-02-27
+2025-09-16 09:02:50,421 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-22.30 (-0.95%)
+2025-09-16 09:02:50,422 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23492.09 on 2023-02-27
+2025-09-16 09:02:50,422 - src.risk_management.risk_manager - INFO - Stop loss: $23022.25, Take profit: $24431.77
+2025-09-16 09:02:50,422 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23236.68 on 2023-02-28
+2025-09-16 09:02:50,422 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-25.54 (-1.09%)
+2025-09-16 09:02:50,438 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $20455.73 on 2023-03-11
+2025-09-16 09:02:50,438 - src.risk_management.risk_manager - INFO - Stop loss: $20046.62, Take profit: $21273.96
+2025-09-16 09:02:50,438 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $20376.46 on 2023-03-12
+2025-09-16 09:02:50,438 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-7.93 (-0.39%)
+2025-09-16 09:02:50,440 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $20779.54 on 2023-03-12
+2025-09-16 09:02:50,440 - src.risk_management.risk_manager - INFO - Stop loss: $20363.95, Take profit: $21610.72
+2025-09-16 09:02:50,440 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $21610.72 on 2023-03-12
+2025-09-16 09:02:50,440 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $83.12 (4.00%)
+2025-09-16 09:02:50,455 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28580.87 on 2023-03-23
+2025-09-16 09:02:50,455 - src.risk_management.risk_manager - INFO - Stop loss: $28009.25, Take profit: $29724.10
+2025-09-16 09:02:50,455 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $28009.25 on 2023-03-23
+2025-09-16 09:02:50,455 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-57.16 (-2.00%)
+2025-09-16 09:02:50,459 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27865.95 on 2023-03-26
+2025-09-16 09:02:50,459 - src.risk_management.risk_manager - INFO - Stop loss: $27308.63, Take profit: $28980.59
+2025-09-16 09:02:50,461 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27308.63 on 2023-03-27
+2025-09-16 09:02:50,461 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-55.73 (-2.00%)
+2025-09-16 09:02:50,463 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27425.99 on 2023-03-28
+2025-09-16 09:02:50,463 - src.risk_management.risk_manager - INFO - Stop loss: $26877.47, Take profit: $28523.03
+2025-09-16 09:02:50,463 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27261.07 on 2023-03-28
+2025-09-16 09:02:50,463 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-16.49 (-0.60%)
+2025-09-16 09:02:50,464 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27367.45 on 2023-03-29
+2025-09-16 09:02:50,464 - src.risk_management.risk_manager - INFO - Stop loss: $26820.10, Take profit: $28462.15
+2025-09-16 09:02:50,465 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $28462.15 on 2023-03-29
+2025-09-16 09:02:50,465 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $109.47 (4.00%)
+2025-09-16 09:02:50,467 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28168.41 on 2023-03-31
+2025-09-16 09:02:50,467 - src.risk_management.risk_manager - INFO - Stop loss: $27605.04, Take profit: $29295.15
+2025-09-16 09:02:50,467 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27605.04 on 2023-03-31
+2025-09-16 09:02:50,467 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-56.34 (-2.00%)
+2025-09-16 09:02:50,468 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28494.99 on 2023-03-31
+2025-09-16 09:02:50,468 - src.risk_management.risk_manager - INFO - Stop loss: $27925.09, Take profit: $29634.79
+2025-09-16 09:02:50,472 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $28124.81 on 2023-04-02
+2025-09-16 09:02:50,472 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-37.02 (-1.30%)
+2025-09-16 09:02:50,473 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28253.73 on 2023-04-03
+2025-09-16 09:02:50,473 - src.risk_management.risk_manager - INFO - Stop loss: $27688.66, Take profit: $29383.88
+2025-09-16 09:02:50,474 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $28051.48 on 2023-04-03
+2025-09-16 09:02:50,474 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-20.23 (-0.72%)
+2025-09-16 09:02:50,480 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28023.39 on 2023-04-08
+2025-09-16 09:02:50,480 - src.risk_management.risk_manager - INFO - Stop loss: $27462.92, Take profit: $29144.33
+2025-09-16 09:02:50,481 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27924.13 on 2023-04-08
+2025-09-16 09:02:50,481 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-9.93 (-0.35%)
+2025-09-16 09:02:50,490 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $30324.09 on 2023-04-14
+2025-09-16 09:02:50,490 - src.risk_management.risk_manager - INFO - Stop loss: $29717.61, Take profit: $31537.05
+2025-09-16 09:02:50,491 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $30325.27 on 2023-04-15
+2025-09-16 09:02:50,491 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $0.12 (0.00%)
+2025-09-16 09:02:50,496 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $30380.59 on 2023-04-18
+2025-09-16 09:02:50,496 - src.risk_management.risk_manager - INFO - Stop loss: $29772.98, Take profit: $31595.81
+2025-09-16 09:02:50,497 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $29772.98 on 2023-04-19
+2025-09-16 09:02:50,498 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-60.76 (-2.00%)
+2025-09-16 09:02:50,504 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27790.48 on 2023-04-24
+2025-09-16 09:02:50,504 - src.risk_management.risk_manager - INFO - Stop loss: $27234.67, Take profit: $28902.10
+2025-09-16 09:02:50,505 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27451.97 on 2023-04-24
+2025-09-16 09:02:50,505 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-33.85 (-1.22%)
+2025-09-16 09:02:50,508 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28415.29 on 2023-04-26
+2025-09-16 09:02:50,508 - src.risk_management.risk_manager - INFO - Stop loss: $27846.98, Take profit: $29551.90
+2025-09-16 09:02:50,510 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $29551.90 on 2023-04-27
+2025-09-16 09:02:50,510 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $113.66 (4.00%)
+2025-09-16 09:02:50,517 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28540.68 on 2023-05-02
+2025-09-16 09:02:50,517 - src.risk_management.risk_manager - INFO - Stop loss: $27969.87, Take profit: $29682.31
+2025-09-16 09:02:50,518 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $28520.90 on 2023-05-03
+2025-09-16 09:02:50,518 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-1.98 (-0.07%)
+2025-09-16 09:02:50,518 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28653.80 on 2023-05-03
+2025-09-16 09:02:50,518 - src.risk_management.risk_manager - INFO - Stop loss: $28080.72, Take profit: $29799.95
+2025-09-16 09:02:50,519 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $28311.51 on 2023-05-03
+2025-09-16 09:02:50,519 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-34.23 (-1.19%)
+2025-09-16 09:02:50,529 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28153.20 on 2023-05-10
+2025-09-16 09:02:50,529 - src.risk_management.risk_manager - INFO - Stop loss: $27590.14, Take profit: $29279.33
+2025-09-16 09:02:50,529 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27590.14 on 2023-05-10
+2025-09-16 09:02:50,529 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-56.31 (-2.00%)
+2025-09-16 09:02:50,534 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $26865.03 on 2023-05-14
+2025-09-16 09:02:50,534 - src.risk_management.risk_manager - INFO - Stop loss: $26327.73, Take profit: $27939.63
+2025-09-16 09:02:50,535 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $26805.98 on 2023-05-14
+2025-09-16 09:02:50,535 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-5.90 (-0.22%)
+2025-09-16 09:02:50,535 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27082.02 on 2023-05-14
+2025-09-16 09:02:50,535 - src.risk_management.risk_manager - INFO - Stop loss: $26540.38, Take profit: $28165.30
+2025-09-16 09:02:50,538 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27130.00 on 2023-05-16
+2025-09-16 09:02:50,538 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $4.80 (0.18%)
+2025-09-16 09:02:50,538 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27252.58 on 2023-05-16
+2025-09-16 09:02:50,538 - src.risk_management.risk_manager - INFO - Stop loss: $26707.53, Take profit: $28342.68
+2025-09-16 09:02:50,539 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27059.03 on 2023-05-16
+2025-09-16 09:02:50,539 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-19.36 (-0.71%)
+2025-09-16 09:02:50,548 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27366.67 on 2023-05-23
+2025-09-16 09:02:50,548 - src.risk_management.risk_manager - INFO - Stop loss: $26819.34, Take profit: $28461.34
+2025-09-16 09:02:50,550 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $26819.34 on 2023-05-24
+2025-09-16 09:02:50,550 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-54.73 (-2.00%)
+2025-09-16 09:02:50,553 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $26501.33 on 2023-05-26
+2025-09-16 09:02:50,553 - src.risk_management.risk_manager - INFO - Stop loss: $25971.30, Take profit: $27561.38
+2025-09-16 09:02:50,554 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $26463.29 on 2023-05-26
+2025-09-16 09:02:50,554 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-3.80 (-0.14%)
+2025-09-16 09:02:50,554 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $26750.21 on 2023-05-26
+2025-09-16 09:02:50,554 - src.risk_management.risk_manager - INFO - Stop loss: $26215.21, Take profit: $27820.22
+2025-09-16 09:02:50,558 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27820.22 on 2023-05-28
+2025-09-16 09:02:50,558 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $107.00 (4.00%)
+2025-09-16 09:02:50,570 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27080.13 on 2023-06-06
+2025-09-16 09:02:50,571 - src.risk_management.risk_manager - INFO - Stop loss: $26538.53, Take profit: $28163.34
+2025-09-16 09:02:50,572 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $26538.53 on 2023-06-07
+2025-09-16 09:02:50,572 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-54.16 (-2.00%)
+2025-09-16 09:02:50,583 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $25598.49 on 2023-06-15
+2025-09-16 09:02:50,583 - src.risk_management.risk_manager - INFO - Stop loss: $25086.52, Take profit: $26622.43
+2025-09-16 09:02:50,584 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $25474.51 on 2023-06-16
+2025-09-16 09:02:50,584 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-12.40 (-0.48%)
+2025-09-16 09:02:50,587 - src.backtesting_engine.backtest - INFO - Backtest completed successfully
+2025-09-16 09:02:50,587 - __main__ - INFO - Generating performance reports...
+2025-09-16 09:02:50,587 - src.performance_reporting.reporter - INFO - Generating comprehensive performance report...
+2025-09-16 09:02:50,595 - src.performance_reporting.reporter - INFO - Creating performance visualizations...
+2025-09-16 09:02:51,911 - src.performance_reporting.reporter - INFO - Visualizations saved to results/crypto
+2025-09-16 09:02:51,915 - src.backtesting_engine.backtest - INFO - Results saved to results/crypto/btc_backtest_20250916_090251_*.csv and results/crypto/btc_backtest_20250916_090251_summary.txt
+2025-09-16 09:04:10,609 - src.data_ingestion.data_loader - INFO - Loading data for BTCUSDT from 2023-01-01 to 2024-01-01
+2025-09-16 09:04:10,609 - src.data_ingestion.data_loader - INFO - Loading data from Binance for BTCUSDT
+2025-09-16 09:04:10,878 - src.binance_connector.binance_client - INFO - Binance public client initialized (data only)
+2025-09-16 09:04:11,108 - src.binance_connector.binance_client - INFO - Binance API connectivity test successful
+2025-09-16 09:04:11,109 - src.binance_connector.data_fetcher - INFO - BinanceDataFetcher initialized successfully
+2025-09-16 09:04:12,547 - src.binance_connector.data_fetcher - INFO - Fetched 1000 candles for BTCUSDT (1h)
+2025-09-16 09:04:12,548 - src.data_ingestion.data_loader - INFO - Data loaded successfully: 1000 rows from 2023-01-01 00:00:00 to 2023-02-11 15:00:00
+2025-09-16 09:04:12,549 - src.backtesting_engine.backtest - INFO - Starting backtest simulation...
+2025-09-16 09:04:12,550 - src.strategy_logic.strategy - INFO - All strategy parameters validated successfully
+2025-09-16 09:04:12,553 - src.strategy_logic.strategy - INFO - Technical indicators calculated successfully
+2025-09-16 09:04:12,652 - src.strategy_logic.strategy - INFO - Generated 94 trading signals
+2025-09-16 09:04:12,655 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $16539.79 on 2023-01-01
+2025-09-16 09:04:12,655 - src.risk_management.risk_manager - INFO - Stop loss: $16208.99, Take profit: $17201.38
+2025-09-16 09:04:12,655 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $16526.19 on 2023-01-01
+2025-09-16 09:04:12,655 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-1.36 (-0.08%)
+2025-09-16 09:04:12,656 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $16537.88 on 2023-01-01
+2025-09-16 09:04:12,656 - src.risk_management.risk_manager - INFO - Stop loss: $16207.12, Take profit: $17199.40
+2025-09-16 09:04:12,660 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $16565.04 on 2023-01-02
+2025-09-16 09:04:12,660 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $2.72 (0.16%)
+2025-09-16 09:04:12,661 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $16587.85 on 2023-01-02
+2025-09-16 09:04:12,661 - src.risk_management.risk_manager - INFO - Stop loss: $16256.09, Take profit: $17251.36
+2025-09-16 09:04:12,666 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $16698.40 on 2023-01-02
+2025-09-16 09:04:12,666 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $11.06 (0.67%)
+2025-09-16 09:04:12,669 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $16725.53 on 2023-01-03
+2025-09-16 09:04:12,669 - src.risk_management.risk_manager - INFO - Stop loss: $16391.02, Take profit: $17394.55
+2025-09-16 09:04:12,670 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $16661.23 on 2023-01-03
+2025-09-16 09:04:12,670 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-6.43 (-0.38%)
+2025-09-16 09:04:12,677 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $16850.36 on 2023-01-04
+2025-09-16 09:04:12,677 - src.risk_management.risk_manager - INFO - Stop loss: $16513.35, Take profit: $17524.37
+2025-09-16 09:04:12,678 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $16828.45 on 2023-01-05
+2025-09-16 09:04:12,678 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-2.19 (-0.13%)
+2025-09-16 09:04:12,687 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $16840.82 on 2023-01-06
+2025-09-16 09:04:12,687 - src.risk_management.risk_manager - INFO - Stop loss: $16504.00, Take profit: $17514.45
+2025-09-16 09:04:12,692 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $16922.51 on 2023-01-07
+2025-09-16 09:04:12,692 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $8.17 (0.49%)
+2025-09-16 09:04:12,693 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $16937.92 on 2023-01-07
+2025-09-16 09:04:12,693 - src.risk_management.risk_manager - INFO - Stop loss: $16599.16, Take profit: $17615.44
+2025-09-16 09:04:12,694 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $16922.79 on 2023-01-07
+2025-09-16 09:04:12,694 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-1.51 (-0.09%)
+2025-09-16 09:04:12,694 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $16928.85 on 2023-01-07
+2025-09-16 09:04:12,694 - src.risk_management.risk_manager - INFO - Stop loss: $16590.27, Take profit: $17606.00
+2025-09-16 09:04:12,696 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $16926.66 on 2023-01-08
+2025-09-16 09:04:12,696 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-0.22 (-0.01%)
+2025-09-16 09:04:12,701 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $16966.67 on 2023-01-08
+2025-09-16 09:04:12,701 - src.risk_management.risk_manager - INFO - Stop loss: $16627.34, Take profit: $17645.34
+2025-09-16 09:04:12,707 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $17221.29 on 2023-01-09
+2025-09-16 09:04:12,707 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $25.46 (1.50%)
+2025-09-16 09:04:12,710 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $17221.68 on 2023-01-10
+2025-09-16 09:04:12,710 - src.risk_management.risk_manager - INFO - Stop loss: $16877.25, Take profit: $17910.55
+2025-09-16 09:04:12,710 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $17203.95 on 2023-01-10
+2025-09-16 09:04:12,710 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-1.77 (-0.10%)
+2025-09-16 09:04:12,711 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $17256.34 on 2023-01-10
+2025-09-16 09:04:12,711 - src.risk_management.risk_manager - INFO - Stop loss: $16911.21, Take profit: $17946.59
+2025-09-16 09:04:12,712 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $17224.15 on 2023-01-10
+2025-09-16 09:04:12,712 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-3.22 (-0.19%)
+2025-09-16 09:04:12,716 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $17416.14 on 2023-01-11
+2025-09-16 09:04:12,716 - src.risk_management.risk_manager - INFO - Stop loss: $17067.82, Take profit: $18112.79
+2025-09-16 09:04:12,719 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $17418.56 on 2023-01-11
+2025-09-16 09:04:12,719 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $0.24 (0.01%)
+2025-09-16 09:04:12,720 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $17487.09 on 2023-01-11
+2025-09-16 09:04:12,720 - src.risk_management.risk_manager - INFO - Stop loss: $17137.35, Take profit: $18186.57
+2025-09-16 09:04:12,722 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $18186.57 on 2023-01-12
+2025-09-16 09:04:12,722 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $69.95 (4.00%)
+2025-09-16 09:04:12,726 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $18134.55 on 2023-01-12
+2025-09-16 09:04:12,726 - src.risk_management.risk_manager - INFO - Stop loss: $17771.86, Take profit: $18859.93
+2025-09-16 09:04:12,726 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $18859.93 on 2023-01-12
+2025-09-16 09:04:12,726 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $72.54 (4.00%)
+2025-09-16 09:04:12,736 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $20721.73 on 2023-01-14
+2025-09-16 09:04:12,736 - src.risk_management.risk_manager - INFO - Stop loss: $20307.30, Take profit: $21550.60
+2025-09-16 09:04:12,740 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $20767.05 on 2023-01-15
+2025-09-16 09:04:12,740 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $4.53 (0.22%)
+2025-09-16 09:04:12,751 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $21102.13 on 2023-01-17
+2025-09-16 09:04:12,751 - src.risk_management.risk_manager - INFO - Stop loss: $20680.09, Take profit: $21946.22
+2025-09-16 09:04:12,752 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $21075.27 on 2023-01-17
+2025-09-16 09:04:12,752 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-2.69 (-0.13%)
+2025-09-16 09:04:12,755 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $21220.78 on 2023-01-17
+2025-09-16 09:04:12,755 - src.risk_management.risk_manager - INFO - Stop loss: $20796.36, Take profit: $22069.61
+2025-09-16 09:04:12,756 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $21232.38 on 2023-01-17
+2025-09-16 09:04:12,756 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $1.16 (0.05%)
+2025-09-16 09:04:12,757 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $21243.96 on 2023-01-18
+2025-09-16 09:04:12,757 - src.risk_management.risk_manager - INFO - Stop loss: $20819.08, Take profit: $22093.72
+2025-09-16 09:04:12,759 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $21249.31 on 2023-01-18
+2025-09-16 09:04:12,759 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $0.54 (0.03%)
+2025-09-16 09:04:12,766 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $20799.40 on 2023-01-19
+2025-09-16 09:04:12,766 - src.risk_management.risk_manager - INFO - Stop loss: $20383.41, Take profit: $21631.38
+2025-09-16 09:04:12,770 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $20991.01 on 2023-01-20
+2025-09-16 09:04:12,770 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $19.16 (0.92%)
+2025-09-16 09:04:12,781 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $22878.37 on 2023-01-22
+2025-09-16 09:04:12,781 - src.risk_management.risk_manager - INFO - Stop loss: $22420.80, Take profit: $23793.50
+2025-09-16 09:04:12,782 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22856.68 on 2023-01-22
+2025-09-16 09:04:12,782 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-2.17 (-0.09%)
+2025-09-16 09:04:12,786 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $22752.05 on 2023-01-23
+2025-09-16 09:04:12,786 - src.risk_management.risk_manager - INFO - Stop loss: $22297.01, Take profit: $23662.13
+2025-09-16 09:04:12,787 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22661.02 on 2023-01-23
+2025-09-16 09:04:12,787 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-9.10 (-0.40%)
+2025-09-16 09:04:12,787 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $22758.32 on 2023-01-23
+2025-09-16 09:04:12,787 - src.risk_management.risk_manager - INFO - Stop loss: $22303.15, Take profit: $23668.65
+2025-09-16 09:04:12,787 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22723.63 on 2023-01-23
+2025-09-16 09:04:12,788 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-3.47 (-0.15%)
+2025-09-16 09:04:12,788 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $22773.33 on 2023-01-23
+2025-09-16 09:04:12,788 - src.risk_management.risk_manager - INFO - Stop loss: $22317.86, Take profit: $23684.26
+2025-09-16 09:04:12,788 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22695.90 on 2023-01-23
+2025-09-16 09:04:12,788 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-7.74 (-0.34%)
+2025-09-16 09:04:12,789 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $22784.18 on 2023-01-23
+2025-09-16 09:04:12,789 - src.risk_management.risk_manager - INFO - Stop loss: $22328.50, Take profit: $23695.55
+2025-09-16 09:04:12,791 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22622.05 on 2023-01-23
+2025-09-16 09:04:12,791 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-16.21 (-0.71%)
+2025-09-16 09:04:12,792 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23022.64 on 2023-01-23
+2025-09-16 09:04:12,792 - src.risk_management.risk_manager - INFO - Stop loss: $22562.19, Take profit: $23943.55
+2025-09-16 09:04:12,796 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22852.79 on 2023-01-24
+2025-09-16 09:04:12,796 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-16.98 (-0.74%)
+2025-09-16 09:04:12,798 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $22999.85 on 2023-01-24
+2025-09-16 09:04:12,798 - src.risk_management.risk_manager - INFO - Stop loss: $22539.85, Take profit: $23919.84
+2025-09-16 09:04:12,799 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22902.84 on 2023-01-24
+2025-09-16 09:04:12,799 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-9.70 (-0.42%)
+2025-09-16 09:04:12,802 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $22694.23 on 2023-01-25
+2025-09-16 09:04:12,802 - src.risk_management.risk_manager - INFO - Stop loss: $22240.35, Take profit: $23602.00
+2025-09-16 09:04:12,803 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22595.72 on 2023-01-25
+2025-09-16 09:04:12,803 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-9.85 (-0.43%)
+2025-09-16 09:04:12,804 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $22629.75 on 2023-01-25
+2025-09-16 09:04:12,804 - src.risk_management.risk_manager - INFO - Stop loss: $22177.15, Take profit: $23534.94
+2025-09-16 09:04:12,804 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22568.94 on 2023-01-25
+2025-09-16 09:04:12,804 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-6.08 (-0.27%)
+2025-09-16 09:04:12,804 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $22724.90 on 2023-01-25
+2025-09-16 09:04:12,804 - src.risk_management.risk_manager - INFO - Stop loss: $22270.40, Take profit: $23633.90
+2025-09-16 09:04:12,805 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23633.90 on 2023-01-25
+2025-09-16 09:04:12,805 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $90.90 (4.00%)
+2025-09-16 09:04:12,809 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23120.96 on 2023-01-26
+2025-09-16 09:04:12,809 - src.risk_management.risk_manager - INFO - Stop loss: $22658.54, Take profit: $24045.80
+2025-09-16 09:04:12,810 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22958.02 on 2023-01-26
+2025-09-16 09:04:12,810 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-16.29 (-0.70%)
+2025-09-16 09:04:12,813 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23034.92 on 2023-01-27
+2025-09-16 09:04:12,813 - src.risk_management.risk_manager - INFO - Stop loss: $22574.22, Take profit: $23956.32
+2025-09-16 09:04:12,815 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22947.87 on 2023-01-27
+2025-09-16 09:04:12,815 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-8.70 (-0.38%)
+2025-09-16 09:04:12,818 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23074.16 on 2023-01-27
+2025-09-16 09:04:12,818 - src.risk_management.risk_manager - INFO - Stop loss: $22612.68, Take profit: $23997.13
+2025-09-16 09:04:12,820 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23066.38 on 2023-01-28
+2025-09-16 09:04:12,820 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-0.78 (-0.03%)
+2025-09-16 09:04:12,822 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23012.54 on 2023-01-28
+2025-09-16 09:04:12,822 - src.risk_management.risk_manager - INFO - Stop loss: $22552.29, Take profit: $23933.04
+2025-09-16 09:04:12,823 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22998.31 on 2023-01-28
+2025-09-16 09:04:12,823 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-1.42 (-0.06%)
+2025-09-16 09:04:12,837 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $22978.24 on 2023-01-31
+2025-09-16 09:04:12,837 - src.risk_management.risk_manager - INFO - Stop loss: $22518.68, Take profit: $23897.37
+2025-09-16 09:04:12,838 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22891.34 on 2023-01-31
+2025-09-16 09:04:12,838 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-8.69 (-0.38%)
+2025-09-16 09:04:12,839 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $22895.15 on 2023-01-31
+2025-09-16 09:04:12,839 - src.risk_management.risk_manager - INFO - Stop loss: $22437.25, Take profit: $23810.96
+2025-09-16 09:04:12,841 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22948.69 on 2023-01-31
+2025-09-16 09:04:12,841 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $5.35 (0.23%)
+2025-09-16 09:04:12,842 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23181.81 on 2023-01-31
+2025-09-16 09:04:12,842 - src.risk_management.risk_manager - INFO - Stop loss: $22718.17, Take profit: $24109.08
+2025-09-16 09:04:12,844 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23065.77 on 2023-02-01
+2025-09-16 09:04:12,844 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-11.60 (-0.50%)
+2025-09-16 09:04:12,845 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23077.52 on 2023-02-01
+2025-09-16 09:04:12,845 - src.risk_management.risk_manager - INFO - Stop loss: $22615.97, Take profit: $24000.62
+2025-09-16 09:04:12,847 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22979.73 on 2023-02-01
+2025-09-16 09:04:12,847 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-9.78 (-0.42%)
+2025-09-16 09:04:12,852 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23839.50 on 2023-02-02
+2025-09-16 09:04:12,852 - src.risk_management.risk_manager - INFO - Stop loss: $23362.71, Take profit: $24793.08
+2025-09-16 09:04:12,853 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23802.57 on 2023-02-02
+2025-09-16 09:04:12,853 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-3.69 (-0.15%)
+2025-09-16 09:04:12,857 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23534.13 on 2023-02-03
+2025-09-16 09:04:12,857 - src.risk_management.risk_manager - INFO - Stop loss: $23063.45, Take profit: $24475.50
+2025-09-16 09:04:12,858 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23346.63 on 2023-02-03
+2025-09-16 09:04:12,858 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-18.75 (-0.80%)
+2025-09-16 09:04:12,858 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23518.32 on 2023-02-03
+2025-09-16 09:04:12,858 - src.risk_management.risk_manager - INFO - Stop loss: $23047.95, Take profit: $24459.05
+2025-09-16 09:04:12,859 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23506.58 on 2023-02-03
+2025-09-16 09:04:12,859 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-1.17 (-0.05%)
+2025-09-16 09:04:12,863 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23363.76 on 2023-02-04
+2025-09-16 09:04:12,863 - src.risk_management.risk_manager - INFO - Stop loss: $22896.48, Take profit: $24298.31
+2025-09-16 09:04:12,866 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23412.48 on 2023-02-04
+2025-09-16 09:04:12,866 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $4.87 (0.21%)
+2025-09-16 09:04:12,867 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23413.98 on 2023-02-04
+2025-09-16 09:04:12,867 - src.risk_management.risk_manager - INFO - Stop loss: $22945.70, Take profit: $24350.54
+2025-09-16 09:04:12,867 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23402.89 on 2023-02-04
+2025-09-16 09:04:12,867 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-1.11 (-0.05%)
+2025-09-16 09:04:12,868 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23364.00 on 2023-02-05
+2025-09-16 09:04:12,868 - src.risk_management.risk_manager - INFO - Stop loss: $22896.72, Take profit: $24298.56
+2025-09-16 09:04:12,870 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23365.02 on 2023-02-05
+2025-09-16 09:04:12,870 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $0.10 (0.00%)
+2025-09-16 09:04:12,874 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23054.44 on 2023-02-06
+2025-09-16 09:04:12,874 - src.risk_management.risk_manager - INFO - Stop loss: $22593.35, Take profit: $23976.62
+2025-09-16 09:04:12,874 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22978.08 on 2023-02-06
+2025-09-16 09:04:12,874 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-7.64 (-0.33%)
+2025-09-16 09:04:12,877 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23041.39 on 2023-02-06
+2025-09-16 09:04:12,877 - src.risk_management.risk_manager - INFO - Stop loss: $22580.56, Take profit: $23963.05
+2025-09-16 09:04:12,879 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22915.05 on 2023-02-06
+2025-09-16 09:04:12,879 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-12.63 (-0.55%)
+2025-09-16 09:04:12,902 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $21686.79 on 2023-02-11
+2025-09-16 09:04:12,902 - src.risk_management.risk_manager - INFO - Stop loss: $21253.05, Take profit: $22554.26
+2025-09-16 09:04:12,902 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $21675.26 on 2023-02-11
+2025-09-16 09:04:12,902 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-1.15 (-0.05%)
+2025-09-16 09:04:12,903 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $21692.63 on 2023-02-11
+2025-09-16 09:04:12,903 - src.risk_management.risk_manager - INFO - Stop loss: $21258.78, Take profit: $22560.34
+2025-09-16 09:04:12,904 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $21670.32 on 2023-02-11
+2025-09-16 09:04:12,904 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-2.23 (-0.10%)
+2025-09-16 09:04:12,907 - src.backtesting_engine.backtest - INFO - Backtest completed successfully
+2025-09-16 09:04:12,907 - src.data_ingestion.data_loader - INFO - Loading data for BTCUSDT from 2023-01-01 to 2024-01-01
+2025-09-16 09:04:12,907 - src.data_ingestion.data_loader - INFO - Loading data from Binance for BTCUSDT
+2025-09-16 09:04:13,157 - src.binance_connector.binance_client - INFO - Binance public client initialized (data only)
+2025-09-16 09:04:13,456 - src.binance_connector.binance_client - INFO - Binance API connectivity test successful
+2025-09-16 09:04:13,456 - src.binance_connector.data_fetcher - INFO - BinanceDataFetcher initialized successfully
+2025-09-16 09:04:14,783 - src.binance_connector.data_fetcher - INFO - Fetched 1000 candles for BTCUSDT (4h)
+2025-09-16 09:04:14,784 - src.data_ingestion.data_loader - INFO - Data loaded successfully: 1000 rows from 2023-01-01 00:00:00 to 2023-06-16 12:00:00
+2025-09-16 09:04:14,785 - src.backtesting_engine.backtest - INFO - Starting backtest simulation...
+2025-09-16 09:04:14,785 - src.strategy_logic.strategy - INFO - All strategy parameters validated successfully
+2025-09-16 09:04:14,789 - src.strategy_logic.strategy - INFO - Technical indicators calculated successfully
+2025-09-16 09:04:14,889 - src.strategy_logic.strategy - INFO - Generated 86 trading signals
+2025-09-16 09:04:14,891 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $16556.66 on 2023-01-01
+2025-09-16 09:04:14,891 - src.risk_management.risk_manager - INFO - Stop loss: $16225.53, Take profit: $17218.93
+2025-09-16 09:04:14,894 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $16643.37 on 2023-01-03
+2025-09-16 09:04:14,894 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $8.67 (0.52%)
+2025-09-16 09:04:14,895 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $16675.18 on 2023-01-03
+2025-09-16 09:04:14,895 - src.risk_management.risk_manager - INFO - Stop loss: $16341.68, Take profit: $17342.19
+2025-09-16 09:04:14,899 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $16794.06 on 2023-01-06
+2025-09-16 09:04:14,899 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $11.89 (0.71%)
+2025-09-16 09:04:14,900 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $16840.82 on 2023-01-06
+2025-09-16 09:04:14,900 - src.risk_management.risk_manager - INFO - Stop loss: $16504.00, Take profit: $17514.45
+2025-09-16 09:04:14,908 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $17514.45 on 2023-01-11
+2025-09-16 09:04:14,908 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $67.36 (4.00%)
+2025-09-16 09:04:14,927 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $22748.86 on 2023-01-25
+2025-09-16 09:04:14,927 - src.risk_management.risk_manager - INFO - Stop loss: $22293.88, Take profit: $23658.81
+2025-09-16 09:04:14,927 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23658.81 on 2023-01-25
+2025-09-16 09:04:14,927 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $91.00 (4.00%)
+2025-09-16 09:04:14,929 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23072.77 on 2023-01-27
+2025-09-16 09:04:14,929 - src.risk_management.risk_manager - INFO - Stop loss: $22611.31, Take profit: $23995.68
+2025-09-16 09:04:14,931 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22991.51 on 2023-01-28
+2025-09-16 09:04:14,931 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-8.13 (-0.35%)
+2025-09-16 09:04:14,936 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23121.80 on 2023-01-31
+2025-09-16 09:04:14,936 - src.risk_management.risk_manager - INFO - Stop loss: $22659.36, Take profit: $24046.67
+2025-09-16 09:04:14,937 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23076.68 on 2023-02-01
+2025-09-16 09:04:14,937 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-4.51 (-0.20%)
+2025-09-16 09:04:14,938 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23385.99 on 2023-02-01
+2025-09-16 09:04:14,938 - src.risk_management.risk_manager - INFO - Stop loss: $22918.27, Take profit: $24321.43
+2025-09-16 09:04:14,940 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23488.94 on 2023-02-02
+2025-09-16 09:04:14,940 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $10.29 (0.44%)
+2025-09-16 09:04:14,940 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23534.18 on 2023-02-03
+2025-09-16 09:04:14,940 - src.risk_management.risk_manager - INFO - Stop loss: $23063.50, Take profit: $24475.55
+2025-09-16 09:04:14,941 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23456.23 on 2023-02-03
+2025-09-16 09:04:14,941 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-7.80 (-0.33%)
+2025-09-16 09:04:14,947 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23091.90 on 2023-02-07
+2025-09-16 09:04:14,947 - src.risk_management.risk_manager - INFO - Stop loss: $22630.06, Take profit: $24015.58
+2025-09-16 09:04:14,948 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22872.28 on 2023-02-08
+2025-09-16 09:04:14,948 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-21.96 (-0.95%)
+2025-09-16 09:04:14,954 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $21888.31 on 2023-02-12
+2025-09-16 09:04:14,954 - src.risk_management.risk_manager - INFO - Stop loss: $21450.54, Take profit: $22763.84
+2025-09-16 09:04:14,955 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $21783.54 on 2023-02-12
+2025-09-16 09:04:14,955 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-10.48 (-0.48%)
+2025-09-16 09:04:14,956 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $21773.97 on 2023-02-13
+2025-09-16 09:04:14,956 - src.risk_management.risk_manager - INFO - Stop loss: $21338.49, Take profit: $22644.93
+2025-09-16 09:04:14,957 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $21700.42 on 2023-02-14
+2025-09-16 09:04:14,957 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-7.36 (-0.34%)
+2025-09-16 09:04:14,957 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $21768.48 on 2023-02-14
+2025-09-16 09:04:14,957 - src.risk_management.risk_manager - INFO - Stop loss: $21333.11, Take profit: $22639.22
+2025-09-16 09:04:14,959 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22639.22 on 2023-02-15
+2025-09-16 09:04:14,959 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $87.07 (4.00%)
+2025-09-16 09:04:14,962 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23838.64 on 2023-02-17
+2025-09-16 09:04:14,962 - src.risk_management.risk_manager - INFO - Stop loss: $23361.87, Take profit: $24792.19
+2025-09-16 09:04:14,962 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23637.04 on 2023-02-17
+2025-09-16 09:04:14,962 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-20.16 (-0.85%)
+2025-09-16 09:04:14,962 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23789.82 on 2023-02-17
+2025-09-16 09:04:14,962 - src.risk_management.risk_manager - INFO - Stop loss: $23314.02, Take profit: $24741.41
+2025-09-16 09:04:14,963 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $24741.41 on 2023-02-17
+2025-09-16 09:04:14,963 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $95.16 (4.00%)
+2025-09-16 09:04:14,967 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $24503.65 on 2023-02-20
+2025-09-16 09:04:14,967 - src.risk_management.risk_manager - INFO - Stop loss: $24013.58, Take profit: $25483.80
+2025-09-16 09:04:14,969 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $24572.83 on 2023-02-21
+2025-09-16 09:04:14,969 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $6.92 (0.28%)
+2025-09-16 09:04:14,971 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $24454.85 on 2023-02-23
+2025-09-16 09:04:14,971 - src.risk_management.risk_manager - INFO - Stop loss: $23965.75, Take profit: $25433.04
+2025-09-16 09:04:14,972 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23965.75 on 2023-02-23
+2025-09-16 09:04:14,972 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-48.91 (-2.00%)
+2025-09-16 09:04:14,977 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23499.33 on 2023-02-26
+2025-09-16 09:04:14,977 - src.risk_management.risk_manager - INFO - Stop loss: $23029.34, Take profit: $24439.30
+2025-09-16 09:04:14,979 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23276.35 on 2023-02-27
+2025-09-16 09:04:14,979 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-22.30 (-0.95%)
+2025-09-16 09:04:14,979 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23492.09 on 2023-02-27
+2025-09-16 09:04:14,979 - src.risk_management.risk_manager - INFO - Stop loss: $23022.25, Take profit: $24431.77
+2025-09-16 09:04:14,980 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23236.68 on 2023-02-28
+2025-09-16 09:04:14,980 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-25.54 (-1.09%)
+2025-09-16 09:04:14,995 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $20455.73 on 2023-03-11
+2025-09-16 09:04:14,995 - src.risk_management.risk_manager - INFO - Stop loss: $20046.62, Take profit: $21273.96
+2025-09-16 09:04:14,995 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $20376.46 on 2023-03-12
+2025-09-16 09:04:14,995 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-7.93 (-0.39%)
+2025-09-16 09:04:14,996 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $20779.54 on 2023-03-12
+2025-09-16 09:04:14,996 - src.risk_management.risk_manager - INFO - Stop loss: $20363.95, Take profit: $21610.72
+2025-09-16 09:04:14,997 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $21610.72 on 2023-03-12
+2025-09-16 09:04:14,997 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $83.12 (4.00%)
+2025-09-16 09:04:15,010 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28580.87 on 2023-03-23
+2025-09-16 09:04:15,010 - src.risk_management.risk_manager - INFO - Stop loss: $28009.25, Take profit: $29724.10
+2025-09-16 09:04:15,011 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $28009.25 on 2023-03-23
+2025-09-16 09:04:15,011 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-57.16 (-2.00%)
+2025-09-16 09:04:15,015 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27865.95 on 2023-03-26
+2025-09-16 09:04:15,015 - src.risk_management.risk_manager - INFO - Stop loss: $27308.63, Take profit: $28980.59
+2025-09-16 09:04:15,017 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27308.63 on 2023-03-27
+2025-09-16 09:04:15,017 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-55.73 (-2.00%)
+2025-09-16 09:04:15,018 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27425.99 on 2023-03-28
+2025-09-16 09:04:15,018 - src.risk_management.risk_manager - INFO - Stop loss: $26877.47, Take profit: $28523.03
+2025-09-16 09:04:15,019 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27261.07 on 2023-03-28
+2025-09-16 09:04:15,019 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-16.49 (-0.60%)
+2025-09-16 09:04:15,019 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27367.45 on 2023-03-29
+2025-09-16 09:04:15,019 - src.risk_management.risk_manager - INFO - Stop loss: $26820.10, Take profit: $28462.15
+2025-09-16 09:04:15,020 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $28462.15 on 2023-03-29
+2025-09-16 09:04:15,020 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $109.47 (4.00%)
+2025-09-16 09:04:15,022 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28168.41 on 2023-03-31
+2025-09-16 09:04:15,022 - src.risk_management.risk_manager - INFO - Stop loss: $27605.04, Take profit: $29295.15
+2025-09-16 09:04:15,023 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27605.04 on 2023-03-31
+2025-09-16 09:04:15,023 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-56.34 (-2.00%)
+2025-09-16 09:04:15,023 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28494.99 on 2023-03-31
+2025-09-16 09:04:15,023 - src.risk_management.risk_manager - INFO - Stop loss: $27925.09, Take profit: $29634.79
+2025-09-16 09:04:15,026 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $28124.81 on 2023-04-02
+2025-09-16 09:04:15,026 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-37.02 (-1.30%)
+2025-09-16 09:04:15,028 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28253.73 on 2023-04-03
+2025-09-16 09:04:15,028 - src.risk_management.risk_manager - INFO - Stop loss: $27688.66, Take profit: $29383.88
+2025-09-16 09:04:15,028 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $28051.48 on 2023-04-03
+2025-09-16 09:04:15,028 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-20.23 (-0.72%)
+2025-09-16 09:04:15,034 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28023.39 on 2023-04-08
+2025-09-16 09:04:15,034 - src.risk_management.risk_manager - INFO - Stop loss: $27462.92, Take profit: $29144.33
+2025-09-16 09:04:15,035 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27924.13 on 2023-04-08
+2025-09-16 09:04:15,035 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-9.93 (-0.35%)
+2025-09-16 09:04:15,043 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $30324.09 on 2023-04-14
+2025-09-16 09:04:15,043 - src.risk_management.risk_manager - INFO - Stop loss: $29717.61, Take profit: $31537.05
+2025-09-16 09:04:15,045 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $30325.27 on 2023-04-15
+2025-09-16 09:04:15,045 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $0.12 (0.00%)
+2025-09-16 09:04:15,049 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $30380.59 on 2023-04-18
+2025-09-16 09:04:15,049 - src.risk_management.risk_manager - INFO - Stop loss: $29772.98, Take profit: $31595.81
+2025-09-16 09:04:15,050 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $29772.98 on 2023-04-19
+2025-09-16 09:04:15,050 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-60.76 (-2.00%)
+2025-09-16 09:04:15,057 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27790.48 on 2023-04-24
+2025-09-16 09:04:15,057 - src.risk_management.risk_manager - INFO - Stop loss: $27234.67, Take profit: $28902.10
+2025-09-16 09:04:15,057 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27451.97 on 2023-04-24
+2025-09-16 09:04:15,057 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-33.85 (-1.22%)
+2025-09-16 09:04:15,061 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28415.29 on 2023-04-26
+2025-09-16 09:04:15,061 - src.risk_management.risk_manager - INFO - Stop loss: $27846.98, Take profit: $29551.90
+2025-09-16 09:04:15,062 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $29551.90 on 2023-04-27
+2025-09-16 09:04:15,062 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $113.66 (4.00%)
+2025-09-16 09:04:15,069 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28540.68 on 2023-05-02
+2025-09-16 09:04:15,069 - src.risk_management.risk_manager - INFO - Stop loss: $27969.87, Take profit: $29682.31
+2025-09-16 09:04:15,070 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $28520.90 on 2023-05-03
+2025-09-16 09:04:15,070 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-1.98 (-0.07%)
+2025-09-16 09:04:15,070 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28653.80 on 2023-05-03
+2025-09-16 09:04:15,070 - src.risk_management.risk_manager - INFO - Stop loss: $28080.72, Take profit: $29799.95
+2025-09-16 09:04:15,071 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $28311.51 on 2023-05-03
+2025-09-16 09:04:15,071 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-34.23 (-1.19%)
+2025-09-16 09:04:15,080 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28153.20 on 2023-05-10
+2025-09-16 09:04:15,080 - src.risk_management.risk_manager - INFO - Stop loss: $27590.14, Take profit: $29279.33
+2025-09-16 09:04:15,080 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27590.14 on 2023-05-10
+2025-09-16 09:04:15,080 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-56.31 (-2.00%)
+2025-09-16 09:04:15,085 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $26865.03 on 2023-05-14
+2025-09-16 09:04:15,085 - src.risk_management.risk_manager - INFO - Stop loss: $26327.73, Take profit: $27939.63
+2025-09-16 09:04:15,085 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $26805.98 on 2023-05-14
+2025-09-16 09:04:15,085 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-5.90 (-0.22%)
+2025-09-16 09:04:15,086 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27082.02 on 2023-05-14
+2025-09-16 09:04:15,086 - src.risk_management.risk_manager - INFO - Stop loss: $26540.38, Take profit: $28165.30
+2025-09-16 09:04:15,088 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27130.00 on 2023-05-16
+2025-09-16 09:04:15,088 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $4.80 (0.18%)
+2025-09-16 09:04:15,089 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27252.58 on 2023-05-16
+2025-09-16 09:04:15,089 - src.risk_management.risk_manager - INFO - Stop loss: $26707.53, Take profit: $28342.68
+2025-09-16 09:04:15,089 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27059.03 on 2023-05-16
+2025-09-16 09:04:15,089 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-19.36 (-0.71%)
+2025-09-16 09:04:15,098 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27366.67 on 2023-05-23
+2025-09-16 09:04:15,098 - src.risk_management.risk_manager - INFO - Stop loss: $26819.34, Take profit: $28461.34
+2025-09-16 09:04:15,100 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $26819.34 on 2023-05-24
+2025-09-16 09:04:15,100 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-54.73 (-2.00%)
+2025-09-16 09:04:15,103 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $26501.33 on 2023-05-26
+2025-09-16 09:04:15,103 - src.risk_management.risk_manager - INFO - Stop loss: $25971.30, Take profit: $27561.38
+2025-09-16 09:04:15,103 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $26463.29 on 2023-05-26
+2025-09-16 09:04:15,103 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-3.80 (-0.14%)
+2025-09-16 09:04:15,104 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $26750.21 on 2023-05-26
+2025-09-16 09:04:15,104 - src.risk_management.risk_manager - INFO - Stop loss: $26215.21, Take profit: $27820.22
+2025-09-16 09:04:15,108 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27820.22 on 2023-05-28
+2025-09-16 09:04:15,108 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $107.00 (4.00%)
+2025-09-16 09:04:15,119 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27080.13 on 2023-06-06
+2025-09-16 09:04:15,119 - src.risk_management.risk_manager - INFO - Stop loss: $26538.53, Take profit: $28163.34
+2025-09-16 09:04:15,120 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $26538.53 on 2023-06-07
+2025-09-16 09:04:15,120 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-54.16 (-2.00%)
+2025-09-16 09:04:15,131 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $25598.49 on 2023-06-15
+2025-09-16 09:04:15,131 - src.risk_management.risk_manager - INFO - Stop loss: $25086.52, Take profit: $26622.43
+2025-09-16 09:04:15,132 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $25474.51 on 2023-06-16
+2025-09-16 09:04:15,132 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-12.40 (-0.48%)
+2025-09-16 09:04:15,134 - src.backtesting_engine.backtest - INFO - Backtest completed successfully
+2025-09-16 09:04:15,135 - src.data_ingestion.data_loader - INFO - Loading data for BTCUSDT from 2023-01-01 to 2024-01-01
+2025-09-16 09:04:15,135 - src.data_ingestion.data_loader - INFO - Loading data from Binance for BTCUSDT
+2025-09-16 09:04:15,388 - src.binance_connector.binance_client - INFO - Binance public client initialized (data only)
+2025-09-16 09:04:15,705 - src.binance_connector.binance_client - INFO - Binance API connectivity test successful
+2025-09-16 09:04:15,706 - src.binance_connector.data_fetcher - INFO - BinanceDataFetcher initialized successfully
+2025-09-16 09:04:16,845 - src.binance_connector.data_fetcher - INFO - Fetched 366 candles for BTCUSDT (1d)
+2025-09-16 09:04:16,846 - src.data_ingestion.data_loader - INFO - Data loaded successfully: 366 rows from 2023-01-01 00:00:00 to 2024-01-01 00:00:00
+2025-09-16 09:04:16,847 - src.backtesting_engine.backtest - INFO - Starting backtest simulation...
+2025-09-16 09:04:16,847 - src.strategy_logic.strategy - INFO - All strategy parameters validated successfully
+2025-09-16 09:04:16,851 - src.strategy_logic.strategy - INFO - Technical indicators calculated successfully
+2025-09-16 09:04:16,894 - src.strategy_logic.strategy - INFO - Generated 35 trading signals
+2025-09-16 09:04:16,905 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $23240.46 on 2023-02-07
+2025-09-16 09:04:16,905 - src.risk_management.risk_manager - INFO - Stop loss: $22775.65, Take profit: $24170.08
+2025-09-16 09:04:16,905 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22775.65 on 2023-02-08
+2025-09-16 09:04:16,905 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-46.48 (-2.00%)
+2025-09-16 09:04:16,907 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $24324.05 on 2023-02-15
+2025-09-16 09:04:16,907 - src.risk_management.risk_manager - INFO - Stop loss: $23837.57, Take profit: $25297.01
+2025-09-16 09:04:16,908 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $23837.57 on 2023-02-16
+2025-09-16 09:04:16,908 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-48.65 (-2.00%)
+2025-09-16 09:04:16,913 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $21997.11 on 2023-03-12
+2025-09-16 09:04:16,913 - src.risk_management.risk_manager - INFO - Stop loss: $21557.17, Take profit: $22876.99
+2025-09-16 09:04:16,914 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $22876.99 on 2023-03-13
+2025-09-16 09:04:16,914 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $87.99 (4.00%)
+2025-09-16 09:04:16,925 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $29472.77 on 2023-04-27
+2025-09-16 09:04:16,925 - src.risk_management.risk_manager - INFO - Stop loss: $28883.31, Take profit: $30651.68
+2025-09-16 09:04:16,926 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $28883.31 on 2023-05-01
+2025-09-16 09:04:16,926 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-58.95 (-2.00%)
+2025-09-16 09:04:16,932 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27219.61 on 2023-05-23
+2025-09-16 09:04:16,932 - src.risk_management.risk_manager - INFO - Stop loss: $26675.22, Take profit: $28308.39
+2025-09-16 09:04:16,932 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $26675.22 on 2023-05-24
+2025-09-16 09:04:16,932 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-54.44 (-2.00%)
+2025-09-16 09:04:16,933 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28065.00 on 2023-05-28
+2025-09-16 09:04:16,933 - src.risk_management.risk_manager - INFO - Stop loss: $27503.70, Take profit: $29187.60
+2025-09-16 09:04:16,934 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27503.70 on 2023-05-31
+2025-09-16 09:04:16,934 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-56.13 (-2.00%)
+2025-09-16 09:04:16,935 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27242.59 on 2023-06-02
+2025-09-16 09:04:16,935 - src.risk_management.risk_manager - INFO - Stop loss: $26697.74, Take profit: $28332.29
+2025-09-16 09:04:16,935 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27069.22 on 2023-06-03
+2025-09-16 09:04:16,935 - src.risk_management.risk_manager - INFO - Exit reason: strategy_signal, P&L: $-17.34 (-0.64%)
+2025-09-16 09:04:16,936 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27230.08 on 2023-06-06
+2025-09-16 09:04:16,936 - src.risk_management.risk_manager - INFO - Stop loss: $26685.48, Take profit: $28319.28
+2025-09-16 09:04:16,937 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $26685.48 on 2023-06-07
+2025-09-16 09:04:16,937 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-54.46 (-2.00%)
+2025-09-16 09:04:16,939 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $26345.00 on 2023-06-16
+2025-09-16 09:04:16,939 - src.risk_management.risk_manager - INFO - Stop loss: $25818.10, Take profit: $27398.80
+2025-09-16 09:04:16,941 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27398.80 on 2023-06-20
+2025-09-16 09:04:16,941 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $105.38 (4.00%)
+2025-09-16 09:04:16,945 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $30344.70 on 2023-07-07
+2025-09-16 09:04:16,945 - src.risk_management.risk_manager - INFO - Stop loss: $29737.81, Take profit: $31558.49
+2025-09-16 09:04:16,947 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $31558.49 on 2023-07-13
+2025-09-16 09:04:16,947 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $121.38 (4.00%)
+2025-09-16 09:04:16,958 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $27716.34 on 2023-08-29
+2025-09-16 09:04:16,958 - src.risk_management.risk_manager - INFO - Stop loss: $27162.01, Take profit: $28824.99
+2025-09-16 09:04:16,958 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $27162.01 on 2023-08-30
+2025-09-16 09:04:16,958 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-55.43 (-2.00%)
+2025-09-16 09:04:16,960 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $26255.00 on 2023-09-07
+2025-09-16 09:04:16,960 - src.risk_management.risk_manager - INFO - Stop loss: $25729.90, Take profit: $27305.20
+2025-09-16 09:04:16,960 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $25729.90 on 2023-09-08
+2025-09-16 09:04:16,960 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-52.51 (-2.00%)
+2025-09-16 09:04:16,969 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $28500.78 on 2023-10-16
+2025-09-16 09:04:16,969 - src.risk_management.risk_manager - INFO - Stop loss: $27930.76, Take profit: $29640.81
+2025-09-16 09:04:16,970 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $29640.81 on 2023-10-20
+2025-09-16 09:04:16,970 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $114.00 (4.00%)
+2025-09-16 09:04:16,976 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $37858.20 on 2023-11-15
+2025-09-16 09:04:16,976 - src.risk_management.risk_manager - INFO - Stop loss: $37101.04, Take profit: $39372.53
+2025-09-16 09:04:16,976 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $37101.04 on 2023-11-16
+2025-09-16 09:04:16,976 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-75.72 (-2.00%)
+2025-09-16 09:04:16,978 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $37408.34 on 2023-11-22
+2025-09-16 09:04:16,978 - src.risk_management.risk_manager - INFO - Stop loss: $36660.17, Take profit: $38904.67
+2025-09-16 09:04:16,980 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $38904.67 on 2023-12-01
+2025-09-16 09:04:16,980 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $149.63 (4.00%)
+2025-09-16 09:04:16,983 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $42869.03 on 2023-12-13
+2025-09-16 09:04:16,983 - src.risk_management.risk_manager - INFO - Stop loss: $42011.65, Take profit: $44583.79
+2025-09-16 09:04:16,983 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $42011.65 on 2023-12-14
+2025-09-16 09:04:16,983 - src.risk_management.risk_manager - INFO - Exit reason: stop_loss, P&L: $-85.74 (-2.00%)
+2025-09-16 09:04:16,984 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $42657.80 on 2023-12-18
+2025-09-16 09:04:16,984 - src.risk_management.risk_manager - INFO - Stop loss: $41804.64, Take profit: $44364.11
+2025-09-16 09:04:16,986 - src.risk_management.risk_manager - INFO - Exited position: 0.100000 BTC at $44364.11 on 2023-12-22
+2025-09-16 09:04:16,986 - src.risk_management.risk_manager - INFO - Exit reason: take_profit, P&L: $170.63 (4.00%)
+2025-09-16 09:04:16,988 - src.risk_management.risk_manager - INFO - Entered position: 0.100000 BTC at $44179.55 on 2024-01-01
+2025-09-16 09:04:16,988 - src.risk_management.risk_manager - INFO - Stop loss: $43295.96, Take profit: $45946.73
+2025-09-16 09:04:16,990 - src.backtesting_engine.backtest - INFO - Backtest completed successfully
